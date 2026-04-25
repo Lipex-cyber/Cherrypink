@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cherry Pink By Mari</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER SUPERIOR -->
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">✦ Frete grátis acima de R$99 &nbsp;•&nbsp; Embalagem presente inclusa ✦</div>
+
+<!-- HEADER -->
 <header class="top-header">
   <div class="logo">
-    <img src="images/noletter.png" alt="Logo">
+    <img src="images/noletter.png" alt="Cherry Pink By Mari">
   </div>
-
   <div class="search-box">
-    <input type="text" placeholder="Digite o que você procura">
+    <input type="text" placeholder="O que você está procurando?">
     <span class="search-icon">🔍</span>
   </div>
-
   <div class="icons">
-    <i data-lucide="message-circle"></i>
-    <i data-lucide="user"></i>
-    <i data-lucide="heart"></i>
     <i data-lucide="shopping-bag" id="cart-icon"></i>
   </div>
 </header>
@@ -30,30 +28,33 @@
 <!-- MENU -->
 <nav class="menu">
   <a href="kit-pronto.html">Kit Pronto</a>
-  <a href="#avulsos">Produtos Avulsos</a>
+  <a href="#avulsos" class="active">Produtos Avulsos</a>
 </nav>
 
 <!-- CARROSSEL -->
 <section class="carousel">
   <div class="carousel-container">
-    <div class="slide">
-      <img src="images/banner1.png" alt="Banner 1">
-    </div>
-    <div class="slide">
-      <img src="images/banner2.png" alt="Banner 2">
-    </div>
-    <div class="slide">
-      <img src="images/banner3.png" alt="Banner 3">
-    </div>
+    <div class="slide"><img src="images/banner1.png" alt="Banner 1"></div>
+    <div class="slide"><img src="images/banner2.png" alt="Banner 2"></div>
+    <div class="slide"><img src="images/banner3.png" alt="Banner 3"></div>
   </div>
-
   <span class="prev">❮</span>
   <span class="next">❯</span>
+  <div class="carousel-dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
 </section>
 
-<!--AVULSOS --> 
+<!-- PRODUTOS AVULSOS -->
 <section id="avulsos" class="avulsos">
-  <h2>PRODUTOS AVULSOS</h2>
+  <div class="section-header">
+    <div class="section-eyebrow">Nossa Coleção</div>
+    <h2>Produtos <em>Avulsos</em></h2>
+    <div class="section-divider"></div>
+  </div>
+
   <div class="filters">
     <button class="filter-btn active" data-filter="all">Todos</button>
     <button class="filter-btn" data-filter="maquiagem">Maquiagem</button>
@@ -62,122 +63,112 @@
     <button class="filter-btn" data-filter="unhas">Unhas</button>
   </div>
 
-<!-- GRID DE PRODUTOS -->
   <div class="products-grid">
+
     <div class="product-card" data-category="maquiagem">
-      <img src="products/pincel.jpeg" alt="Produto 1">
-      <h3>Pincel de Sobrancelha</h3>
-      <p>R$ 4,90</p>
-      <div class="product-options">
+      <img src="products/pincel.jpeg" alt="Pincel de Sobrancelha">
+      <h3 style="padding:16px 20px 4px">Pincel de Sobrancelha</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 4,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
-
-<!-- GRID DE PRODUTOS -->
+<!--
     <div class="product-card" data-category="maquiagem">
-      <img src="products/silicone.jpeg" alt="Produto 2">
-      <h3>Pincel de Silicone (2 em 1)</h3>
-      <p>R$ 14,90</p>
-      <div class="product-options">
+      <img src="products/silicone.jpeg" alt="Pincel de Silicone">
+      <h3 style="padding:16px 20px 4px">Pincel de Silicone (2 em 1)</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 14,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
-
         <select class="color-select">
           <option value="Padrão">Cor</option>
           <option value="Rosa">Rosa</option>
-            <option value="Vinho">Vinho</option>
+          <option value="Vinho">Vinho</option>
         </select>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="cabelo">
-      <img src="products/presilha.jpeg" alt="Produto 3">
-      <h3>Presilhas para Cabelo (2 un.)</h3>
-      <p>R$ 6,90</p>      
-      <div class="product-options">
+      <img src="products/presilha.jpeg" alt="Presilhas para Cabelo">
+      <h3 style="padding:16px 20px 4px">Presilhas para Cabelo (2 un.)</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 6,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="cabelo">
-      <img src="products/piranha.jpeg" alt="Produto 4">
-      <h3>Piranha para Cabelo</h3>
-      <p>R$ 12,90</p>
-      <div class="product-options">
+      <img src="products/piranha.jpeg" alt="Piranha para Cabelo">
+      <h3 style="padding:16px 20px 4px">Piranha para Cabelo</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 12,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
-
         <select class="color-select">
           <option value="Padrão">Cor</option>
           <option value="Rosa">Rosa</option>
           <option value="Azul">Azul</option>
         </select>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
-
-<!-- GRID DE PRODUTOS -->
+  -->
     <div class="product-card" data-category="unhas">
-      <img src="products/lixab.jpeg" alt="Produto 5">
-      <h3>Mini Lixa de Unhas</h3>
-      <p>R$ 3,50</p>
-      <div class="product-options">
+      <img src="products/lixab.jpeg" alt="Mini Lixa de Unhas">
+      <h3 style="padding:16px 20px 4px">Mini Lixa de Unhas</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 3,50</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="unhas">
-      <img src="products/lixav.jpeg" alt="Produto 5">
-      <h3>Mini Lixa de Unhas </h3>
-      <p>R$ 3,50</p>
-      <div class="product-options">
+      <img src="products/lixav.jpeg" alt="Mini Lixa de Unhas">
+      <h3 style="padding:16px 20px 4px">Mini Lixa de Unhas</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 3,50</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="cabelo">
-      <img src="products/xuxinha.jpeg" alt="Produto 6">
-      <h3>Xuxinha de Cetim </h3>
-      <p>R$ 3,50</p>
-      <div class="product-options">
+      <img src="products/xuxinha.jpeg" alt="Xuxinha de Cetim">
+      <h3 style="padding:16px 20px 4px">Xuxinha de Cetim</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 3,50</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
-
         <select class="color-select">
           <option value="Padrão">Cor</option>
           <option value="Rosa">Rosa</option>
@@ -187,21 +178,19 @@
           <option value="Branco">Branco</option>
         </select>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="cabelo">
-      <img src="products/escova.jpeg" alt="Produto 7">
-      <h3>Escova para Cabelo </h3>
-      <p>R$ 8,90</p>
-      <div class="product-options">
+      <img src="products/escova.jpeg" alt="Escova para Cabelo">
+      <h3 style="padding:16px 20px 4px">Escova para Cabelo</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 8,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
-
         <select class="color-select">
           <option value="Padrão">Cor</option>
           <option value="Amarelo">Amarelo</option>
@@ -212,22 +201,19 @@
           <option value="Dourado">Dourado</option>
         </select>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
-
-<!-- GRID DE PRODUTOS -->
+<!--
     <div class="product-card" data-category="maquiagem">
-      <img src="products/gloss.jpeg" alt="Produto 8">
-      <h3>Gloss com Aplicador<br>
-      Roll-On</h3>
-      <p>R$ 12,90</p>
-      <div class="product-options">
+      <img src="products/gloss.jpeg" alt="Gloss com Aplicador Roll-On">
+      <h3 style="padding:16px 20px 4px">Gloss com Aplicador Roll-On</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 12,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
-
         <select class="color-select">
           <option value="Padrão">Aroma</option>
           <option value="Morango">Morango</option>
@@ -236,186 +222,164 @@
           <option value="Uva">Uva</option>
         </select>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
-
-<!-- GRID DE PRODUTOS -->
+  -->
     <div class="product-card" data-category="maquiagem">
-      <img src="products/esponjinhas.jpeg" alt="Produto 9">
-      <h3>Mini Esponjinhas <br>
-      Kit com 3</h3>
-      <p>R$ 7,90</p>
-      <div class="product-options">
+      <img src="products/esponjinhas.jpeg" alt="Mini Esponjinhas">
+      <h3 style="padding:16px 20px 4px">Mini Esponjinhas — Kit com 3</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 7,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
-  
-<!-- GRID DE PRODUTOS -->
+<!--
     <div class="product-card" data-category="pele">
-      <img src="products/babbaloko.jpeg" alt="Produto 10">
-      <h3>Esfoliante <br>
-      Tutti-Fruitt</h3>
-      <p>R$ 19,90</p>
-      <div class="product-options">
+      <img src="products/babbaloko.jpeg" alt="Esfoliante Tutti-Fruitt">
+      <h3 style="padding:16px 20px 4px">Esfoliante Tutti-Fruitt</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 19,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="pele">
-      <img src="products/morango.jpeg" alt="Produto 11">
-      <h3>Esfoliante <br>
-      Morango</h3>
-      <p>R$ 19,90</p>  
-      <div class="product-options">
+      <img src="products/morango.jpeg" alt="Esfoliante Morango">
+      <h3 style="padding:16px 20px 4px">Esfoliante Morango</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 19,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="pele">
-      <img src="products/pitaya.jpeg" alt="Produto 12">
-      <h3>Esfoliante <br>
-      Pitaya</h3>
-      <p>R$ 19,90</p>  
-      <div class="product-options">
+      <img src="products/pitaya.jpeg" alt="Esfoliante Pitaya">
+      <h3 style="padding:16px 20px 4px">Esfoliante Pitaya</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 19,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
-
-<!-- GRID DE PRODUTOS -->
+  -->
     <div class="product-card" data-category="pele">
-      <img src="products/mascara.jpeg" alt="Produto 13">
-      <h3>Máscara Facial <br>
-      Rosa Mosqueta</h3>
-      <p>R$ 3,50</p>  
-      <div class="product-options">
+      <img src="products/mascara.jpeg" alt="Máscara Facial Rosa Mosqueta">
+      <h3 style="padding:16px 20px 4px">Máscara Facial Rosa Mosqueta</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 3,50</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="pele">
-      <img src="products/sebo.jpeg" alt="Produto 14">
-      <h3>Sebo de Carneiro</h3>
-      <p>R$ 19,90</p>  
-      <div class="product-options">
+      <img src="products/sebo.jpeg" alt="Sebo de Carneiro">
+      <h3 style="padding:16px 20px 4px">Sebo de Carneiro</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 19,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="maquiagem">
-      <img src="products/faixa.jpeg" alt="Produto 15">
-      <h3>Kit Faixa <br>
-      Skin Care</h3>
-      <p>R$ 25,90</p>  
-      <div class="product-options">
+      <img src="products/faixa.jpeg" alt="Kit Faixa Skin Care">
+      <h3 style="padding:16px 20px 4px">Kit Faixa Skin Care</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 25,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
-
         <select class="color-select">
           <option value="Padrão">Cor</option>
-          <option value="Rosa">Rosa Chiclete</option>
-          <option value="Vermelho">Rosa Bebê</option>
-          <option value="Preto">Cinza</option>
+          <option value="Rosa Chiclete">Rosa Chiclete</option>
+          <option value="Rosa Bebê">Rosa Bebê</option>
+          <option value="Cinza">Cinza</option>
         </select>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="pele">
-      <img src="products/rosa.jpeg" alt="Produto 16">
-      <h3>Creme Hidratante <br>
-      Rosa Mosqueta </h3>
-      <p>R$ 24,90</p>  
-      <div class="product-options">
+      <img src="products/rosa.jpeg" alt="Creme Hidratante Rosa Mosqueta">
+      <h3 style="padding:16px 20px 4px">Creme Hidratante Rosa Mosqueta</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 24,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
 
-<!-- GRID DE PRODUTOS -->
     <div class="product-card" data-category="pele">
-      <img src="products/ameixa.jpeg" alt="Produto 17">
-      <h3>Creme Hidratante<br>
-      Ameixa</h3>
-      <p>R$ 24,90</p>  
-      <div class="product-options">
+      <img src="products/ameixa.jpeg" alt="Creme Hidratante Ameixa">
+      <h3 style="padding:16px 20px 4px">Creme Hidratante Ameixa</h3>
+      <p style="padding:0 20px 8px;color:var(--rose-deep);font-size:20px;font-weight:700;font-family:'Cormorant Garamond',serif">R$ 24,90</p>
+      <div class="product-options" style="padding:0 20px 12px">
         <div class="qty">
           <button class="qty-minus">−</button>
           <input type="text" class="qty-input" value="1" readonly>
           <button class="qty-plus">+</button>
         </div>
       </div>
-      <button class="add-to-cart">Adicionar Minha Sacola</button>
+      <button class="add-to-cart">Adicionar à Sacola</button>
     </div>
+
   </div>
 </section>
 
-<!-- SACOLA FLUTUANTE -->
+<!-- SACOLA -->
 <div class="cart-overlay" id="cart-overlay"></div>
-
 <div class="cart-drawer" id="cart-drawer">
   <div class="cart-header">
     <h3>Minha Sacola</h3>
     <span id="close-cart">✕</span>
   </div>
-
   <div class="cart-items" id="cart-items"></div>
-
   <div class="cart-footer">
     <strong id="cart-total">Total: R$ 0,00</strong>
     <button class="checkout-btn">Finalizar Compra</button>
   </div>
 </div>
 
-<!-- MODAL DADOS CLIENTE -->
+<!-- MODAL CHECKOUT -->
 <div id="checkout-modal" class="checkout-modal">
   <div class="checkout-box">
     <h3>Dados para Entrega</h3>
-
-    <input type="text" id="client-name" placeholder="Seu nome" />
+    <input type="text" id="client-name" placeholder="Seu nome">
     <textarea id="client-address" placeholder="Endereço completo"></textarea>
-
     <div class="checkout-actions">
       <button id="cancel-checkout">Cancelar</button>
       <button id="confirm-checkout">Confirmar Pedido</button>
@@ -423,11 +387,18 @@
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer class="site-footer">
 
-  <div class="footer-container">
+  <div class="footer-top-band">
+    <div class="footer-cta">
+      <h3>Siga nossas redes 💖</h3>
+      <p>Novidades, promoções e muito amor por lá</p>
+    </div>
+    <a href="https://www.instagram.com/cherrypink_bymari" target="_blank" class="footer-cta-btn">@cherrypink_bymari</a>
+  </div>
 
-    <!-- FORMAS DE PAGAMENTO -->
+  <div class="footer-container">
     <div class="footer-column">
       <h4>Formas de Pagamento</h4>
       <div class="payment-icons">
@@ -436,27 +407,11 @@
         <img src="images/master.png" alt="Mastercard">
       </div>
     </div>
-
-    <!-- REDES SOCIAIS -->
-    <div class="footer-column">
-      <h4>Redes Sociais</h4>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/cherrypink_bymari?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">
-          <i data-lucide="instagram"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send/?phone=5551994119090&text&type=phone_number&app_absent=0&utm_source=ig" aria-label="WhatsApp">
-          <i data-lucide="message-circle"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- CONTATO -->
     <div class="footer-column">
       <h4>Contato</h4>
       <p>📞 WhatsApp: (51) 99411-9090</p>
       <p>📍 Atendimento Online</p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
@@ -464,11 +419,8 @@
   </div>
 
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
   <script src="index.js"></script>
-
 </footer>
 </body>
 </html>

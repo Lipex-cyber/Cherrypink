@@ -1,256 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kit Pronto | Cherry Pink By Mari</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">✦ Frete grátis acima de R$99 &nbsp;•&nbsp; Embalagem presente inclusa ✦</div>
+
+<!-- HEADER -->
 <header class="top-header">
   <div class="logo">
-    <img src="images/noletter.png" alt="Logo">
+    <img src="images/noletter.png" alt="Cherry Pink By Mari">
   </div>
-
   <div class="search-box">
-    <input type="text" placeholder="Digite o que você procura">
+    <input type="text" placeholder="O que você está procurando?">
     <span class="search-icon">🔍</span>
   </div>
-
   <div class="icons">
-    <i data-lucide="message-circle"></i>
-    <i data-lucide="user"></i>
-    <i data-lucide="heart"></i>
     <i data-lucide="shopping-bag" id="cart-icon"></i>
   </div>
 </header>
 
 <!-- MENU -->
 <nav class="menu">
-  <a href="kit-pronto.html">Kit Pronto</a>
+  <a href="kit-pronto.html" class="active">Kit Pronto</a>
   <a href="index.html">Produtos Avulsos</a>
 </nav>
-</header>
 
 <!-- CARROSSEL -->
 <section class="carousel">
   <div class="carousel-container">
-    <div class="slide">
-      <img src="images/banner1.png" alt="Banner 1">
-    </div>
-    <div class="slide">
-      <img src="images/banner2.png" alt="Banner 2">
-    </div>
-    <div class="slide">
-      <img src="images/banner3.png" alt="Banner 3">
-    </div>
+    <div class="slide"><img src="images/banner1.png" alt="Banner 1"></div>
+    <div class="slide"><img src="images/banner2.png" alt="Banner 2"></div>
+    <div class="slide"><img src="images/banner3.png" alt="Banner 3"></div>
   </div>
-
   <span class="prev">❮</span>
   <span class="next">❯</span>
+  <div class="carousel-dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
 </section>
 
+<!-- PAGE HEADER -->
 <main class="page-content">
-  <h1>KIT PRONTO</h1>
-  <p>Escolha seu kit pronto e receba tudo organizado 💖</p>
+  <div class="section-eyebrow">Kits Especiais</div>
+  <h1>Kit <em>Pronto</em></h1>
+  <p>Escolha seu kit e receba tudo organizado, com carinho 💖</p>
 </main>
 
-<!-- GRID DOS KITS -->
-<div class="product-card kit-card">
-  <div class="kit-image">
-    <img src="products/cristal.jpeg" alt="Kit Pronto" class="img-front">
-    <img src="products/cristal2.jpeg" alt="Kit Pronto Hover" class="img-hover">
-  </div>
+<!-- KITS -->
+<div class="kits-section">
 
-  <div class="kit-content">
-    <h3>Cristal Care Box</h3>
-    <p class="kit-price">R$ 37,90</p>
-
-    <div class="kit-description">
-      <strong>Acompanha:</strong>
-      <ul>
-        <li>1 Pincel de Silicone (2 em 1) </li>
-        <li>1 Xuxinha de Cetim</li>
-        <li>1 Mascara Facial</li>
-        <li>1 Gloss</li>
-        <li>1 Bombom</li>
-        <li>Embalagem completa (Box + Laço)</li>
-      </ul>
+  <div class="kit-card product-card">
+    <div class="kit-image">
+      <img src="products/cristal.jpeg" alt="Cristal Care Box" class="img-front">
+      <img src="products/cristal2.jpeg" alt="Cristal Care Box" class="img-hover">
     </div>
-
-    <button class="add-to-cart">Adicionar Minha Sacola</button>
+    <div class="kit-content">
+      <h3>Cristal Care Box</h3>
+      <p class="kit-price">R$ 37,90</p>
+      <div class="kit-description">
+        <strong>Acompanha:</strong>
+        <ul>
+          <li>1 Pincel de Silicone (2 em 1)</li>
+          <li>1 Xuxinha de Cetim</li>
+          <li>1 Máscara Facial</li>
+          <li>1 Gloss</li>
+          <li>1 Bombom</li>
+          <li>Embalagem completa (Box + Laço)</li>
+        </ul>
+      </div>
+      <button class="add-to-cart">Adicionar à Sacola</button>
+    </div>
   </div>
+
+  <div class="kit-card product-card">
+    <div class="kit-image">
+      <img src="products/box.jpeg" alt="Cristal Care Box Pro" class="img-front">
+      <img src="products/box2.jpeg" alt="Cristal Care Box Pro" class="img-hover">
+    </div>
+    <div class="kit-content">
+      <h3>Cristal Care Box Pro</h3>
+      <p class="kit-price">R$ 39,90</p>
+      <div class="kit-description">
+        <strong>Acompanha:</strong>
+        <ul>
+          <li>1 Escova de Cabelo</li>
+          <li>1 Xuxinha de Cetim</li>
+          <li>1 Máscara Facial</li>
+          <li>1 Gloss</li>
+          <li>Kit de 3 Mini Esponjinhas</li>
+          <li>1 Máscara Facial em Cápsula</li>
+          <li>1 Mini Lixa de Unhas</li>
+          <li>Embalagem completa (Box + Laço)</li>
+        </ul>
+      </div>
+      <button class="add-to-cart">Adicionar à Sacola</button>
+    </div>
+  </div>
+
+  <div class="kit-card product-card">
+    <div class="kit-image">
+      <img src="products/beijinhomorango.jpeg" alt="Taça Beijinho de Morango" class="img-front">
+      <img src="products/beijinhomorango2.jpeg" alt="Taça Beijinho de Morango" class="img-hover">
+    </div>
+    <div class="kit-content">
+      <h3>Taça Beijinho de Morango</h3>
+      <p class="kit-price">R$ 54,90</p>
+      <div class="kit-description">
+        <strong>Acompanha:</strong>
+        <ul>
+          <li>1 Taça de Gin</li>
+          <li>1 Xuxinha de Cetim</li>
+          <li>1 Pincel de Silicone (2 em 1)</li>
+          <li>1 Gloss</li>
+          <li>Kit de 3 Mini Esponjinhas</li>
+          <li>1 Escova de Cabelo</li>
+          <li>1 Bombom</li>
+        </ul>
+      </div>
+      <button class="add-to-cart">Adicionar à Sacola</button>
+    </div>
+  </div>
+
+  <div class="kit-card product-card">
+    <div class="kit-image">
+      <img src="products/midnight.jpeg" alt="Midnight Coral" class="img-front">
+      <img src="products/midnight2.jpeg" alt="Midnight Coral" class="img-hover">
+    </div>
+    <div class="kit-content">
+      <h3>Midnight Coral</h3>
+      <p class="kit-price">R$ 54,90</p>
+      <div class="kit-description">
+        <strong>Acompanha:</strong>
+        <ul>
+          <li>1 Taça de Gin</li>
+          <li>1 Xuxinha de Cetim</li>
+          <li>1 Piranha de Cabelo</li>
+          <li>1 Gloss</li>
+          <li>Kit de 3 Mini Esponjinhas</li>
+          <li>1 Escova de Cabelo</li>
+          <li>1 Pincel de Sobrancelha</li>
+          <li>1 Mini Lixa de Unhas</li>
+        </ul>
+      </div>
+      <button class="add-to-cart">Adicionar à Sacola</button>
+    </div>
+  </div>
+
+  <div class="kit-card product-card">
+    <div class="kit-image">
+      <img src="products/smoothie.jpeg" alt="Makeup Smoothie" class="img-front">
+      <img src="products/smoothie2.jpeg" alt="Makeup Smoothie" class="img-hover">
+    </div>
+    <div class="kit-content">
+      <h3>Makeup Smoothie</h3>
+      <p class="kit-price">R$ 39,90</p>
+      <div class="kit-description">
+        <strong>Acompanha:</strong>
+        <ul>
+          <li>1 Copo com Tampa e Canudo</li>
+          <li>2 Presilhas de Cabelo</li>
+          <li>1 Gloss</li>
+          <li>1 Máscara Facial</li>
+          <li>Kit de 3 Mini Esponjinhas</li>
+          <li>1 Pincel de Sobrancelha</li>
+          <li>1 Mini Lixa de Unhas</li>
+        </ul>
+      </div>
+      <button class="add-to-cart">Adicionar à Sacola</button>
+    </div>
+  </div>
+
+  <div class="kit-card product-card">
+    <div class="kit-image">
+      <img src="products/pinkshake.jpeg" alt="Pink Shake" class="img-front">
+      <img src="products/pinkshake2.jpeg" alt="Pink Shake" class="img-hover">
+    </div>
+    <div class="kit-content">
+      <h3>Pink Shake</h3>
+      <p class="kit-price">R$ 45,90</p>
+      <div class="kit-description">
+        <strong>Acompanha:</strong>
+        <ul>
+          <li>1 Piranha de Cabelo</li>
+          <li>1 Xuxinha de Cetim</li>
+          <li>1 Gloss</li>
+          <li>1 Máscara Facial</li>
+          <li>1 Bala Fini</li>
+          <li>1 Mini Lixa de Unhas</li>
+          <li>Kit de 3 Mini Esponjinhas</li>
+          <li>Copo de MilkShake (Descartável)</li>
+        </ul>
+      </div>
+      <button class="add-to-cart">Adicionar à Sacola</button>
+    </div>
+  </div>
+
 </div>
 
-<!-- GRID DOS KITS -->
-<div class="product-card kit-card">
-  <div class="kit-image">
-    <img src="products/box.jpeg" alt="Kit Pronto" class="img-front">
-    <img src="products/box2.jpeg" alt="Kit Pronto Hover" class="img-hover">
-  </div>
-
-  <div class="kit-content">
-    <h3>Cristal Care Box Pro</h3>
-    <p class="kit-price">R$ 39,90</p>
-
-    <div class="kit-description">
-      <strong>Acompanha:</strong>
-      <ul>
-        <li>1 Escova de Cabelo </li>
-        <li>1 Xuxinha de Cetim</li>
-        <li>1 Mascara Facial</li>
-        <li>1 Gloss</li>
-        <li>Kit de 3 mini Esponjinhas</li>
-        <li>1 Mascara Facial em Cápsula</li>
-        <li>1 Mini Lixa de Unhas</li>
-        <li>Embalagem completa (Box + Laço)</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart">Adicionar Minha Sacola</button>
-  </div>
-</div>
-
-<!-- GRID DOS KITS -->
-<div class="product-card kit-card">
-  <div class="kit-image">
-    <img src="products/beijinhomorango.jpeg" alt="Kit Pronto" class="img-front">
-    <img src="products/beijinhomorango2.jpeg" alt="Kit Pronto Hover" class="img-hover">
-  </div>
-
-  <div class="kit-content">
-    <h3>Taça Beijinho de Morango</h3>
-    <p class="kit-price">R$ 54,90</p>
-
-    <div class="kit-description">
-      <strong>Acompanha:</strong>
-      <ul>
-        <li>1 Taça de Gin </li>
-        <li>1 Xuxinha de Cetim</li>
-        <li>1 Pincel de Silicone (2 em 1)</li>
-        <li>1 Gloss</li>
-        <li>Kit de 3 mini Esponjinhas</li>
-        <li>1 Escova de Cabelo</li>
-        <li>1 Bombom</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart">Adicionar Minha Sacola</button>
-  </div>
-</div>
-
-<!-- GRID DOS KITS -->
-<div class="product-card kit-card">
-  <div class="kit-image">
-    <img src="products/midnight.jpeg" alt="Kit Pronto" class="img-front">
-    <img src="products/midnight2.jpeg" alt="Kit Pronto Hover" class="img-hover">
-  </div>
-
-  <div class="kit-content">
-    <h3>Midnight Coral</h3>
-    <p class="kit-price">R$ 54,90</p>
-
-    <div class="kit-description">
-      <strong>Acompanha:</strong>
-      <ul>
-        <li>1 Taça de Gin </li>
-        <li>1 Xuxinha de Cetim</li>
-        <li>1 Piranha de Cabelo</li>
-        <li>1 Gloss</li>
-        <li>Kit de 3 mini Esponjinhas</li>
-        <li>1 Escova de Cabelo</li>
-        <li>1 Pincel de Sobrancelha</li>
-        <li>1 Mini Lixa de Unhas</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart">Adicionar Minha Sacola</button>
-  </div>
-</div>
-
-<!-- GRID DOS KITS -->
-<div class="product-card kit-card">
-  <div class="kit-image">
-    <img src="products/smoothie.jpeg" alt="Kit Pronto" class="img-front">
-    <img src="products/smoothie2.jpeg" alt="Kit Pronto Hover" class="img-hover">
-  </div>
-
-  <div class="kit-content">
-    <h3>Makeup Smoothie</h3>
-    <p class="kit-price">R$ 39,90</p>
-
-    <div class="kit-description">
-      <strong>Acompanha:</strong>
-      <ul>
-        <li>1 Copo com Tampa e Canudo </li>
-        <li>2 Presilhas de Cabelo</li>
-        <li>1 Gloss</li>
-        <li>1 Mascara Facial</li>  
-        <li>Kit de 3 mini Esponjinhas</li>
-        <li>1 Pincel de Sobrancelha</li>
-        <li>1 Mini Lixa de Unhas</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart">Adicionar Minha Sacola</button>
-  </div>
-</div>
-
-<!-- GRID DOS KITS -->
-<div class="product-card kit-card">
-  <div class="kit-image">
-    <img src="products/pinkshake.jpeg" alt="Kit Pronto" class="img-front">
-    <img src="products/pinkshake2.jpeg" alt="Kit Pronto Hover" class="img-hover">
-  </div>
-
-  <div class="kit-content">
-    <h3>Pink Shake</h3>
-    <p class="kit-price">R$ 45,90</p>
-
-    <div class="kit-description">
-      <strong>Acompanha:</strong>
-      <ul>
-        <li>1 Piranha de Cabelo</li>
-        <li>1 Xuxinha de Cetim</li>
-        <li>1 Gloss</li>
-        <li>1 Mascara Facial</li>  
-        <li>1 Bala Fini</li>
-        <li>1 Mini Lixa de Unhas</li> 
-        <li>Kit de 3 mini Esponjinhas</li>  
-        <li>Copo de MilkShake (Descartável)</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart">Adicionar Minha Sacola</button>
-  </div>
-</div>
-
-
-<!-- SACOLA FLUTUANTE -->
+<!-- SACOLA -->
 <div class="cart-overlay" id="cart-overlay"></div>
-
 <div class="cart-drawer" id="cart-drawer">
   <div class="cart-header">
     <h3>Minha Sacola</h3>
     <span id="close-cart">✕</span>
   </div>
-
   <div class="cart-items" id="cart-items"></div>
-
   <div class="cart-footer">
     <strong id="cart-total">Total: R$ 0,00</strong>
     <button class="checkout-btn">Finalizar Compra</button>
   </div>
 </div>
 
-<!-- MODAL DADOS CLIENTE -->
+<!-- MODAL -->
 <div id="checkout-modal" class="checkout-modal">
   <div class="checkout-box">
     <h3>Dados para Entrega</h3>
-
-    <input type="text" id="client-name" placeholder="Seu nome" />
+    <input type="text" id="client-name" placeholder="Seu nome">
     <textarea id="client-address" placeholder="Endereço completo"></textarea>
-
     <div class="checkout-actions">
       <button id="cancel-checkout">Cancelar</button>
       <button id="confirm-checkout">Confirmar Pedido</button>
@@ -258,11 +232,18 @@
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer class="site-footer">
 
-  <div class="footer-container">
+  <div class="footer-top-band">
+    <div class="footer-cta">
+      <h3>Siga nossas redes 💖</h3>
+      <p>Novidades, promoções e muito amor por lá</p>
+    </div>
+    <a href="https://www.instagram.com/cherrypink_bymari" target="_blank" class="footer-cta-btn">@cherrypink_bymari</a>
+  </div>
 
-    <!-- FORMAS DE PAGAMENTO -->
+  <div class="footer-container">
     <div class="footer-column">
       <h4>Formas de Pagamento</h4>
       <div class="payment-icons">
@@ -271,27 +252,11 @@
         <img src="images/master.png" alt="Mastercard">
       </div>
     </div>
-
-    <!-- REDES SOCIAIS -->
-    <div class="footer-column">
-      <h4>Redes Sociais</h4>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/cherrypink_bymari?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">
-          <i data-lucide="instagram"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send/?phone=5551994119090&text&type=phone_number&app_absent=0&utm_source=ig" aria-label="WhatsApp">
-          <i data-lucide="message-circle"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- CONTATO -->
     <div class="footer-column">
       <h4>Contato</h4>
       <p>📞 WhatsApp: (51) 99411-9090</p>
       <p>📍 Atendimento Online</p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
@@ -299,11 +264,8 @@
   </div>
 
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
   <script src="index.js"></script>
-
 </footer>
 </body>
 </html>
